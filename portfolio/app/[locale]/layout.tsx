@@ -24,7 +24,7 @@ export default async function LocaleLayout({children, params} : Props) {
         <NextIntlClientProvider locale={locale} messages={messages}>
             <ThemeProvider>
                 <Navbar />
-                {children}
+                <div> {children} </div>
             </ThemeProvider>
         </NextIntlClientProvider>
     );

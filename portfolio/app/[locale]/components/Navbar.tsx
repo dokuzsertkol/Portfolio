@@ -1,22 +1,35 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import {useParams} from 'next/navigation';
-import ThemeToggle from './ThemeToggle';
+import Link from "next/link";
+import {useParams} from "next/navigation";
+import { useTranslations } from "next-intl";
+import ThemeToggle from "./ThemeToggle";
+import LocaleSwitcher from "./LocaleSwitcher";
 
 export default function Navbar() {
     const {locale} = useParams();
+    const t = useTranslations("Navbar");
 
     return (
-        <nav>
-                <ul>
-                    <li><Link href={`/${locale}`}>Home</Link></li>
-                    <li><Link href={`/${locale}/about`}>About</Link></li>
-                    <li><Link href={`/${locale}/projects`}>Projects</Link></li>
-                    <li><Link href={`/${locale}/contact`}>Contact</Link></li>
-                    <li><Link href={`/${locale}/cv`}>CV</Link></li>
-                </ul>
-                <ThemeToggle />
+        <nav className="bg-l_base dark:bg-d_base shadow-md">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex justify-between h-16 items-center">
+                    <div className="flex-shrink-0 text-xl font-bold">
+                        <Link href={`/${locale}`}>{t("name")}</Link>
+                    </div>
+                    <ul className="hidden md:flex space-x-6">
+                        <li><Link href={`/${locale}`}>{t("home")}</Link></li>
+                        <li><Link href={`/${locale}/about`}>{t("about")}</Link></li>
+                        <li><Link href={`/${locale}/projects`}>{t("projects")}</Link></li>
+                        <li><Link href={`/${locale}/contact`}>{t("contact")}</Link></li>
+                        <li><Link href={`/${locale}/cv`}>{t("cv")}</Link></li>
+                    </ul>
+                    <ul className="hidden md:flex space-x-6">
+                        <li><LocaleSwitcher /></li>
+                        <li><ThemeToggle /></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     );
 }

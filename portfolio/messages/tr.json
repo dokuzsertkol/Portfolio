@@ -1,5 +1,13 @@
 {
   "HomePage": {
     "title": "Web siteme hoş geldiniz"
+  },
+  "Navbar": {
+    "name": "Emre E. Portföy",
+    "home": "Ana Sayfa",
+    "about": "Hakkında",
+    "projects": "Projeler",
+    "contact": "İletişim",
+    "cv": "CV"
   }
 }
