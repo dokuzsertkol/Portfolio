@@ -1,6 +1,6 @@
 1:"$Sreact.fragment"
-2:I[84662,["/portfolio/_next/static/chunks/c3792120003f3048.js"],"ThemeProvider"]
-3:I[88905,["/portfolio/_next/static/chunks/c3792120003f3048.js"],"default"]
+2:I[84662,["/portfolio/_next/static/chunks/1ab505b4ecc0e87c.js"],"ThemeProvider"]
+3:I[88905,["/portfolio/_next/static/chunks/1ab505b4ecc0e87c.js"],"default"]
 4:I[39756,["/portfolio/_next/static/chunks/ff1a16fafef87110.js","/portfolio/_next/static/chunks/247eb132b7f7b574.js"],"default"]
 5:I[37457,["/portfolio/_next/static/chunks/ff1a16fafef87110.js","/portfolio/_next/static/chunks/247eb132b7f7b574.js"],"default"]
-0:{"buildId":"Qlyfl2pUwsKjbLvNjoD0-","rsc":["$","$1","c",{"children":[[["$","script","script-0",{"src":"/portfolio/_next/static/chunks/c3792120003f3048.js","async":true}]],["$","$L2",null,{"children":[["$","$L3",null,{"t":{"name":"Emre E. Portföy","home":"Ana Sayfa","about":"Hakkında","projects":"Projeler","contact":"İletişim","cv":"CV"}}],["$","div",null,{"children":[" ",["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}]}]," "]}]]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"mDo70ZurQiefMXKX15vZS","rsc":["$","$1","c",{"children":[[["$","script","script-0",{"src":"/portfolio/_next/static/chunks/1ab505b4ecc0e87c.js","async":true}]],["$","$L2",null,{"children":[["$","$L3",null,{"t":{"name":"Emre E.","home":"Ana Sayfa","about":"Hakkında","projects":"Projeler","contact":"İletişim","cv":"CV"}}],["$","div",null,{"children":[" ",["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}]}]," "]}]]}]]}],"loading":null,"isPartial":false}
