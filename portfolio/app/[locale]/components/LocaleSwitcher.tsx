@@ -8,17 +8,12 @@ export default function LocaleSwitcher() {
     const { theme } = useTheme();
     const router = useRouter();
     const params = useParams();
-    const currentLocale = params.locale as string;
+    const currentLocale = params.locale as string ?? "en";
     const [open, setOpen] = useState(false);
+    const [mounted, setMounted] = useState(false);
     const dropdownRef = useRef<HTMLDivElement>(null);
 
-    const switchLocale = (locale: string) => {
-        const pathname = window.location.pathname;
-        const newPath = pathname.replace(`/${currentLocale}`, `/${locale}`);
-        router.push(newPath);
-        setOpen(false);
-    };
-
+    useEffect(() => setMounted(true), []);
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
             if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
@@ -28,6 +23,15 @@ export default function LocaleSwitcher() {
         document.addEventListener("mousedown", handleClickOutside);
         return () => document.removeEventListener("mousedown", handleClickOutside);
     }, []);
+
+    if (!mounted) return null;
+
+    const switchLocale = (locale: string) => {
+        const pathname = window.location.pathname;
+        const newPath = pathname.replace(`/${currentLocale}`, `/${locale}`);
+        router.push(newPath);
+        setOpen(false);
+    };
 
     return (
         <div className="relative" ref={dropdownRef}>

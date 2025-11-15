@@ -1,14 +1,12 @@
 import {NextConfig} from 'next';
-import createNextIntlPlugin from 'next-intl/plugin';
 
-const isProd = process.env.github_pages === "production";
+const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig: NextConfig = {
     output: 'export',
     images: { unoptimized: true },
     basePath: isProd ? "/Portfolio" : "",
-    assetPrefix: isProd ? "/Porfolio/" : "",
+    assetPrefix: isProd ? "/Portfolio/" : "",
 };
- 
-const withNextIntl = createNextIntlPlugin();
-export default withNextIntl(nextConfig);
+
+export default nextConfig;

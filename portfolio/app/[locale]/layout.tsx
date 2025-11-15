@@ -1,12 +1,13 @@
-import {NextIntlClientProvider, hasLocale} from 'next-intl';
+import {hasLocale} from 'next-intl';
 import {notFound} from 'next/navigation';
-import {routing} from '@/i18n/routing';
 import {ThemeProvider} from './components/ThemeProvider';
 import Navbar from './components/Navbar';
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
     return [{locale: 'en'}, {locale: 'tr'}];
 }
+
+const locales = ["en", "tr"];
 
 type Props = {
     children: React.ReactNode;
@@ -15,17 +16,15 @@ type Props = {
  
 export default async function LocaleLayout({children, params} : Props) {
     const {locale} = await params;
-    if (!hasLocale(routing.locales, locale)) {
+    if (!hasLocale(locales, locale)) {
         notFound();
     }
     const messages = (await import(`../../messages/${locale}.json`)).default;
 
     return (
-        <NextIntlClientProvider locale={locale} messages={messages}>
-            <ThemeProvider>
-                <Navbar />
-                <div> {children} </div>
-            </ThemeProvider>
-        </NextIntlClientProvider>
+        <ThemeProvider>
+            <Navbar t={messages.Navbar}/>
+            <div> {children} </div>
+        </ThemeProvider>
     );
 }
