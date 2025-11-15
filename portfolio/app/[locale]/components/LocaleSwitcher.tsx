@@ -12,7 +12,9 @@ export default function LocaleSwitcher() {
     const [open, setOpen] = useState(false);
     const [mounted, setMounted] = useState(false);
     const dropdownRef = useRef<HTMLDivElement>(null);
+    const basePath = process.env.NODE_ENV === "production" ? "/portfolio" : "";
 
+    basePath
     useEffect(() => setMounted(true), []);
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
@@ -28,15 +30,20 @@ export default function LocaleSwitcher() {
 
     const switchLocale = (locale: string) => {
         const pathname = window.location.pathname;
-        const newPath = pathname.replace(`/${currentLocale}`, `/${locale}`);
+        const pathWithoutBase = pathname.replace(/^\/portfolio/, ""); // necessary for github pages
+        const newPath = pathWithoutBase.replace(`/${currentLocale}`, `/${locale}`);
         router.push(newPath);
         setOpen(false);
     };
 
+    const trPath = basePath + "/tr.svg";
+    const enPath = basePath + "/uk.svg";
+    const worldPath = theme === "dark" ? `${basePath}/d_world.svg` : `${basePath}/l_world.svg`;
+
     return (
         <div className="relative" ref={dropdownRef}>
             <button onClick={() => setOpen(!open)} className="flex items-center gap-1 px-2 py-1 text-sm">
-                <img src={theme === "dark" ? "/d_world.svg" : "/l_world.svg" } alt={currentLocale === "en" ? "Language" : "Dil"} className="w-5 h-5" />
+                <img src={worldPath} alt={currentLocale === "en" ? "Language" : "Dil"} className="w-5 h-5" />
                 {currentLocale.toUpperCase()}
                 <svg
                     className={`w-6 h-6 transition-transform ${open ? "rotate-180" : ""}`}
@@ -54,14 +61,14 @@ export default function LocaleSwitcher() {
                         onClick={() => switchLocale("tr")}
                         className="flex items-center gap-2 w-full text-left px-3 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700"
                         >
-                        <img src="/tr.svg" alt="Türkçe" className="w-4 h-4" />
+                        <img src={trPath} alt="Türkçe" className="w-4 h-4" />
                         <span>Türkçe</span>
                     </button>
                     <button
                         onClick={() => switchLocale("en")}
                         className="flex items-center gap-2 w-full text-left px-3 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700"
                         >
-                        <img src="/uk.svg" alt="English" className="w-4 h-4" />
+                        <img src={enPath} alt="English" className="w-4 h-4" />
                         <span>English</span>
                     </button>
                 </div>
