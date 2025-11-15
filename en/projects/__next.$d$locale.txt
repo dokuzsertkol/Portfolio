@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[84662,["/Portfolio/_next/static/chunks/327608e4c98cdc12.js"],"ThemeProvider"]
+3:I[88905,["/Portfolio/_next/static/chunks/327608e4c98cdc12.js"],"default"]
+4:I[39756,["/Portfolio/_next/static/chunks/ff1a16fafef87110.js","/Portfolio/_next/static/chunks/247eb132b7f7b574.js"],"default"]
+5:I[37457,["/Portfolio/_next/static/chunks/ff1a16fafef87110.js","/Portfolio/_next/static/chunks/247eb132b7f7b574.js"],"default"]
+0:{"buildId":"z4ed65lGzTZQvoYUApxu6","rsc":["$","$1","c",{"children":[[["$","script","script-0",{"src":"/Portfolio/_next/static/chunks/327608e4c98cdc12.js","async":true}]],["$","$L2",null,{"children":[["$","$L3",null,{"t":{"name":"Emre E. Portfolio","home":"Home","about":"About","projects":"Projects","contact":"Contact","cv":"CV"}}],["$","div",null,{"children":[" ",["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}]}]," "]}]]}]]}],"loading":null,"isPartial":false}
