@@ -1,7 +1,4 @@
 {
-  "HomePage": {
-    "title": "Hello world!"
-  },
   "Navbar": {
     "name": "Emre E.",
     "home": "Home",
@@ -9,5 +6,10 @@
     "projects": "Projects",
     "contact": "Contact",
     "cv": "CV"
+  },
+  "HomePage": {
+    "welcome": "Welcome!",
+    "name": "Emre E.",
+    "title": "Computer Engineer • Full Stack Web Developer"
   }
 }

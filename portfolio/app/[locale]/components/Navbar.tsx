@@ -2,19 +2,24 @@
 
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import ThemeToggle from "./ThemeToggle";
 import LocaleSwitcher from "./LocaleSwitcher";
 
 type Props = {
-    t: any;
+    t: any
 }
 
 export default function Navbar({t}: Props) {
     const { resolvedTheme } = useTheme();
     const {locale} = useParams();
     const [isOpen, setIsOpen] = useState(false);
+    const [mounted, setMounted] = useState(false);
+    
+    useEffect(() => setMounted(true), []);
+    if (!mounted) return null;
+
     const basePath = process.env.NODE_ENV === "production" ? "/portfolio" : "";
 
     const hamburgerPath = resolvedTheme === "dark" ? `${basePath}/d_hamburger.svg` : `${basePath}/l_hamburger.svg`;

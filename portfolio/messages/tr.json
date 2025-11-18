@@ -1,7 +1,4 @@
 {
-  "HomePage": {
-    "title": "Web siteme hoş geldiniz"
-  },
   "Navbar": {
     "name": "Emre E.",
     "home": "Ana Sayfa",
@@ -9,5 +6,10 @@
     "projects": "Projeler",
     "contact": "İletişim",
     "cv": "CV"
+  },
+  "HomePage": {
+    "welcome": "Hoş Geldiniz!",
+    "name": "Emre E.",
+    "title": "Bilgisayar Mühendisi • Full Stack Web Geliştirici"
   }
 }

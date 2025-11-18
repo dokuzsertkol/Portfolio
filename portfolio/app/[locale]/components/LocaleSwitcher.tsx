@@ -14,7 +14,6 @@ export default function LocaleSwitcher() {
     const dropdownRef = useRef<HTMLDivElement>(null);
     const basePath = process.env.NODE_ENV === "production" ? "/portfolio" : "";
 
-    basePath
     useEffect(() => setMounted(true), []);
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
@@ -58,18 +57,18 @@ export default function LocaleSwitcher() {
             {open && (
                 <div className="absolute right-0 mt-2 w-28 bg-white dark:bg-gray-800 border rounded-lg shadow-md z-50">
                     <button
-                        onClick={() => switchLocale("tr")}
-                        className="flex items-center gap-2 w-full text-left px-3 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700"
-                        >
-                        <img src={trPath} alt="Türkçe" className="w-4 h-4" />
-                        <span>Türkçe</span>
-                    </button>
-                    <button
                         onClick={() => switchLocale("en")}
                         className="flex items-center gap-2 w-full text-left px-3 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700"
                         >
                         <img src={enPath} alt="English" className="w-4 h-4" />
                         <span>English</span>
+                    </button>
+                    <button
+                        onClick={() => switchLocale("tr")}
+                        className="flex items-center gap-2 w-full text-left px-3 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700"
+                        >
+                        <img src={trPath} alt="Türkçe" className="w-4 h-4" />
+                        <span>Türkçe</span>
                     </button>
                 </div>
             )}
