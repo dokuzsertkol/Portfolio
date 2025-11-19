@@ -1,8 +1,8 @@
 1:"$Sreact.fragment"
-2:I[84662,["/portfolio/_next/static/chunks/ae3827556cccf416.js"],"ThemeProvider"]
-3:I[88905,["/portfolio/_next/static/chunks/ae3827556cccf416.js"],"default"]
-4:I[48476,["/portfolio/_next/static/chunks/ae3827556cccf416.js"],"MessageProvider"]
-5:I[67188,["/portfolio/_next/static/chunks/ae3827556cccf416.js"],"default"]
+2:I[84662,["/portfolio/_next/static/chunks/8ec57e273f338ad1.js"],"ThemeProvider"]
+3:I[88905,["/portfolio/_next/static/chunks/8ec57e273f338ad1.js"],"default"]
+4:I[48476,["/portfolio/_next/static/chunks/8ec57e273f338ad1.js"],"MessageProvider"]
+5:I[67188,["/portfolio/_next/static/chunks/8ec57e273f338ad1.js"],"default"]
 6:I[39756,["/portfolio/_next/static/chunks/ff1a16fafef87110.js","/portfolio/_next/static/chunks/247eb132b7f7b574.js"],"default"]
 7:I[37457,["/portfolio/_next/static/chunks/ff1a16fafef87110.js","/portfolio/_next/static/chunks/247eb132b7f7b574.js"],"default"]
-0:{"buildId":"8NTehzaTP5gljyw_9lmvi","rsc":["$","$1","c",{"children":[[["$","script","script-0",{"src":"/portfolio/_next/static/chunks/ae3827556cccf416.js","async":true}]],["$","$L2",null,{"children":[["$","$L3",null,{"t":{"name":"Emre E.","home":"Home","about":"About","projects":"Projects","contact":"Contact","cv":"CV"}}],["$","$L4",null,{"messages":{"Navbar":{"name":"Emre E.","home":"Home","about":"About","projects":"Projects","contact":"Contact","cv":"CV"},"HomePage":{"welcome":"Welcome!","name":"Emre E.","title":"Computer Engineer • Full Stack Web Developer"}},"children":["$","$L5",null,{"children":["$","$L6",null,{"parallelRouterKey":"children","template":["$","$L7",null,{}]}]}]}]]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"WjHhkpD-D6dzC0Y1z4KWp","rsc":["$","$1","c",{"children":[[["$","script","script-0",{"src":"/portfolio/_next/static/chunks/8ec57e273f338ad1.js","async":true}]],["$","$L2",null,{"children":[["$","$L3",null,{"t":{"name":"Emre E.","home":"Home","about":"About","projects":"Projects","contact":"Contact","cv":"CV"}}],["$","$L4",null,{"messages":{"Navbar":{"name":"Emre E.","home":"Home","about":"About","projects":"Projects","contact":"Contact","cv":"CV"},"HomePage":{"welcome":"Welcome!","name":"Emre E.","title":"Computer Engineer • Full Stack Developer • Backend Developer","about":"About Me","projects":"View My Projects","contact":"Contact Me"}},"children":["$","$L5",null,{"children":["$","$L6",null,{"parallelRouterKey":"children","template":["$","$L7",null,{}]}]}]}]]}]]}],"loading":null,"isPartial":false}
