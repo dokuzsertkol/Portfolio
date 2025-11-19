@@ -30,14 +30,24 @@ export default function Navbar({t}: Props) {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-16 items-center">
                     <div className="flex-shrink-0 text-xl font-bold">
-                        <Link href={`/${locale}`}>{t.name}</Link>
+                        <Link href={`/${locale}`} className="hover:text-white dark:hover:text-l_base transition">{t.name}</Link>
                     </div>
                     <ul className="hidden md:flex space-x-6">
-                        <li><Link href={`/${locale}`}>{t.home}</Link></li>
-                        <li><Link href={`/${locale}/about`}>{t.about}</Link></li>
-                        <li><Link href={`/${locale}/projects`}>{t.projects}</Link></li>
-                        <li><Link href={`/${locale}/contact`}>{t.contact}</Link></li>
-                        <li><Link href={`/${locale}/cv`}>{t.cv}</Link></li>
+                        <li><Link href={`/${locale}`} className="hover:text-white dark:hover:text-l_base transition">
+                            {t.home}</Link>
+                        </li>
+                        <li><Link href={`/${locale}/about`} className="hover:text-white dark:hover:text-l_base transition">
+                            {t.about}</Link>
+                        </li>
+                        <li><Link href={`/${locale}/projects`} className="hover:text-white dark:hover:text-l_base transition">
+                            {t.projects}</Link>
+                        </li>
+                        <li><Link href={`/${locale}/contact`} className="hover:text-white dark:hover:text-l_base transition">
+                            {t.contact}</Link>
+                        </li>
+                        <li><Link href={`/${locale}/cv`} className="hover:text-white dark:hover:text-l_base transition">
+                            {t.cv}</Link>
+                        </li>
                     </ul>
                     <ul className="flex space-x-6">
                         <li><LocaleSwitcher /></li>

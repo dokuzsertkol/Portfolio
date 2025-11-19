@@ -7,7 +7,9 @@ const config = {
         extend: {
             colors: {
                 l_base: "#BFECFF",
-                d_base: "#070D12",
+                d_base: "#152736",
+                l_base_hover: "#E0F9FF",
+                d_base_hover: "#21384A",
             },
             keyframes: {
                 spinClockwise: {

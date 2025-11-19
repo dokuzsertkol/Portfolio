@@ -10,6 +10,9 @@
   "HomePage": {
     "welcome": "Hoş Geldiniz!",
     "name": "Emre E.",
-    "title": "Bilgisayar Mühendisi • Full Stack Web Geliştirici"
+    "title": "Bilgisayar Mühendisi • Full Stack Geliştirici • Backend Geliştirici",
+    "about": "Hakkımda",
+    "projects": "Projelerime Göz Atın",
+    "contact": "Bana Ulaşın"
   }
 }

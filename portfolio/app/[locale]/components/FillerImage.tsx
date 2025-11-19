@@ -32,7 +32,7 @@ export default function FillerImage({ children } : Props) {
             alt="right filler"
             className="pointer-events-none select-none hidden md:block absolute right-0 top-0 w-[400px] h-[660px] object-cover"
             />
-            <div className="max-w-4xl px-4 py-16 text-center"> 
+            <div className="max-w-4xl px-4 py-10 text-center"> 
                 {children}
             </div>
         </div>

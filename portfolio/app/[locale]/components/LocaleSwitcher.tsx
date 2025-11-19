@@ -41,7 +41,7 @@ export default function LocaleSwitcher() {
 
     return (
         <div className="relative" ref={dropdownRef}>
-            <button onClick={() => setOpen(!open)} className="flex items-center gap-1 px-2 py-1 text-sm">
+            <button onClick={() => setOpen(!open)} className="flex items-center gap-1 px-2 py-1 hover:text-white dark:hover:text-l_base transition">
                 <img src={worldPath} alt={currentLocale === "en" ? "Language" : "Dil"} className="w-5 h-5" />
                 {currentLocale.toUpperCase()}
                 <svg

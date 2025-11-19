@@ -7,7 +7,7 @@ type Props = {
 
 export default function Links({ linkedinPath, githubPath }: Props) {
     return (
-        <section className="flex flex-col items-center justify-center text-center mt-10 mb-5">
+        <section className="flex flex-col items-center justify-center text-center">
             <ul className="flex space-x-6">
                 <li>
                     <a href="https://www.linkedin.com/in/emreey/" target="_blank" rel="noopener noreferrer">

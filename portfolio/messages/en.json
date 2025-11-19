@@ -10,6 +10,9 @@
   "HomePage": {
     "welcome": "Welcome!",
     "name": "Emre E.",
-    "title": "Computer Engineer • Full Stack Web Developer"
+    "title": "Computer Engineer • Full Stack Developer • Backend Developer",
+    "about": "About Me",
+    "projects": "View My Projects",
+    "contact": "Contact Me"
   }
 }
