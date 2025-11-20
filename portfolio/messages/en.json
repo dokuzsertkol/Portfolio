@@ -14,5 +14,17 @@
     "about": "About Me",
     "projects": "View My Projects",
     "contact": "Contact Me"
+  },
+  "AboutPage": {
+    "title": "Who Am I?",
+    "content": "I'm Emre. Ever since I was a child, I have been fascinated by how the applications I used actually worked. This curiosity led me into the world of software development, and over time I realized that it was not just a hobby but a field in which I wanted to build my career.\nWith this motivation, I began studying **Computer Engineering** at university, and I am now only one course away from graduating. Throughout my studies, I strengthened my theoretical foundation and developed various projects to put this knowledge into practice.\nAlthough I initially focused on **Backend** technologies, I gradually became interested in **Frontend** development as well, which guided me toward becoming a **Full Stack developer**.\nI am currently focused on improving my skills, learning new technologies, and seeking **internship** or **job** opportunities where I can contribute and continue to grow within a team.",
+    "skillsTitle": "My Skills",
+    "skillsLanguage": "Programming Languages",
+    "skillsBackend": "Backend",
+    "skillsFrontend": "Frontend",
+    "skillsDatabase": "Database & ORMs",
+    "skillsDevOps": "DevOps & Cloud",
+    "skillsTools": "Tools & IDEs",
+    "lastUpdated": "Last Updated: November 2025"
   }
 }

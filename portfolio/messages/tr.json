@@ -14,5 +14,17 @@
     "about": "Hakkımda",
     "projects": "Projelerime Göz Atın",
     "contact": "Bana Ulaşın"
+  },
+  "AboutPage": {
+    "title": "Ben Kimim?",
+    "content": "Adım Emre. Çocukluğumdan kullandığım uygulamaların çalışma mantığını merak ederdim. Bu merakla yazılım geliştirme dünyası ile tanıştım. Zamanla bu ilgimin sadece bir hobi olmadığını, kariyerimi ilerletmek istediğim bir alan olduğunu fark ettim.\nBu motivasyonla üniversitede **Bilgisayar Mühendisliği** okumaya başladım ve mezun olmama yalnızca bir ders kaldı. Okul sürecimde hem teorik altyapımı güçlendirdim hem de kendimi pratiğe dökebilmek için çeşitli projeler geliştirdim.\n**Backend** teknolojilerine ilgi duymamın yanı sıra, zamanla **Frontend** ile de ilgilenerek **Full Stack geliştirme** alanında uzmanlaşmaya yöneldim.\nŞu anda aktif olarak kendimi geliştirmeye, yeni teknolojiler öğrenmeye ve değer katabileceğim bir ekipte **iş** veya **staj** fırsatları aramaya devam ediyorum.",
+    "skillsTitle": "Yeteneklerim",
+    "skillsLanguage": "Programlama Dilleri",
+    "skillsBackend": "Backend",
+    "skillsFrontend": "Frontend",
+    "skillsDatabase": "Veritabanı & ORM'ler",
+    "skillsDevOps": "DevOps & Bulut",
+    "skillsTools": "Araçlar & IDE'ler",
+    "lastUpdated": "Son Güncelleme: Kasım 2025"
   }
 }

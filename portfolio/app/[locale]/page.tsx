@@ -28,7 +28,7 @@ export default function HomePage() {
     const githubPath = resolvedTheme === "dark" ? `${basePath}/d_github.svg` : `${basePath}/l_github.svg`;
 
     return (
-        <main>
+        <main className="text-center">
             <p className="animate-sway-2 text-lg md:text-xl font-bold mb-10">{t.welcome}</p>
             
             <Hero heroPath={heroPath} t={t}/>

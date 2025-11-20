@@ -26,6 +26,7 @@ export default function Navbar({t}: Props) {
     const closePath = resolvedTheme === "dark" ? `${basePath}/d_close.svg` : `${basePath}/l_close.svg`;
 
     return (
+        <div className="fixed top-0 left-0 w-full z-50">
         <nav className="bg-l_base dark:bg-d_base shadow-md">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-16 items-center">
@@ -70,5 +71,6 @@ export default function Navbar({t}: Props) {
                 </div>
             )}
         </nav>
+        </div>
     );
 }
