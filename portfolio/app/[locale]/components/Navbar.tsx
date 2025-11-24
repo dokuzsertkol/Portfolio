@@ -22,8 +22,8 @@ export default function Navbar({t}: Props) {
 
     const basePath = process.env.NODE_ENV === "production" ? "/portfolio" : "";
 
-    const hamburgerPath = resolvedTheme === "dark" ? `${basePath}/d_hamburger.svg` : `${basePath}/l_hamburger.svg`;
-    const closePath = resolvedTheme === "dark" ? `${basePath}/d_close.svg` : `${basePath}/l_close.svg`;
+    const hamburgerPath = resolvedTheme === "dark" ? `${basePath}/navbar/d_hamburger.svg` : `${basePath}/navbar/l_hamburger.svg`;
+    const closePath = resolvedTheme === "dark" ? `${basePath}/navbar/d_close.svg` : `${basePath}/navbar/l_close.svg`;
 
     return (
         <div className="fixed top-0 left-0 w-full z-50">

@@ -6,9 +6,9 @@ export default function AboutPage() {
     const t = messages.AboutPage;
 
     return (
-        <main>
+        <main className="pt-10">
             <section>
-                <h1 className="text-4xl md:text-5xl font-bold mb-5">{t.title}</h1>
+                <h1 className="text-4xl md:text-5xl font-bold mt-5 mb-5">{t.title}</h1>
                 <div className="space-y-3 mb-5">
                     {t.content.split("\n").map((p: string, i: number) => (
                         <p key={i} className="whitespace-pre-line text-justify">

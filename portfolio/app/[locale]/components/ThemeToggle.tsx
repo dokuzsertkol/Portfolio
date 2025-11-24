@@ -11,7 +11,7 @@ export default function ThemeToggle() {
     useEffect(() => setMounted(true), []);
     if (!mounted) return null;
     
-    const imagePath = resolvedTheme === "dark" ? `${basePath}/sun.svg` : `${basePath}/moon.svg`;
+    const imagePath = resolvedTheme === "dark" ? `${basePath}/navbar/sun.svg` : `${basePath}/navbar/moon.svg`;
 
     return (
         <button onClick={() => setTheme(resolvedTheme === "light" ? "dark" : "light")} className="flex items-center gap-1 px-2 py-1 text-sm">

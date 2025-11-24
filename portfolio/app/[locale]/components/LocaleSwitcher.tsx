@@ -35,9 +35,9 @@ export default function LocaleSwitcher() {
         setOpen(false);
     };
 
-    const trPath = basePath + "/tr.svg";
-    const enPath = basePath + "/uk.svg";
-    const worldPath = resolvedTheme === "dark" ? `${basePath}/d_world.svg` : `${basePath}/l_world.svg`;
+    const trPath = basePath + "/navbar/tr.svg";
+    const enPath = basePath + "/navbar/uk.svg";
+    const worldPath = resolvedTheme === "dark" ? `${basePath}/navbar/d_world.svg` : `${basePath}/navbar/l_world.svg`;
 
     return (
         <div className="relative" ref={dropdownRef}>
