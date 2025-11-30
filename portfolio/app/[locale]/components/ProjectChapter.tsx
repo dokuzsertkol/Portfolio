@@ -40,7 +40,7 @@ export default function ProjectChapter({ chapter, level = 2 }: { chapter: chapte
                         href={chapter.description}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className=" underline break-words"
+                        className="text-blue-600 underline break-words"
                     >
                         {chapter.title ?? chapter.description}
                     </a>

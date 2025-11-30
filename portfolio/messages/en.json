@@ -33,5 +33,19 @@
     },
     "ProjectDetailPage": {
         "footer": "Check My Other Projects"
+    },
+    "ContactPage": {
+        "title": "Contact Me",
+        "description": "Feel free to reach out for projects, collaborations, or just to say hi via this form or at {email}. I’ll get back to you as soon as possible. You can also connect with me through my LinkedIn and GitHub profiles.",
+        "namelabel": "Name",
+        "nameplaceholder": "Your name",
+        "emaillabel": "Email",
+        "emailplaceholder": "example@mail.com",
+        "subjectlabel": "Subject",
+        "subjectplaceholder": "Subject",
+        "messagelabel": "Message",
+        "messageplaceholder": "Write your message...",
+        "submitbutton": "Send",
+        "submitmessage": "Your message has been sent successfully. Thank you."
     }
 }

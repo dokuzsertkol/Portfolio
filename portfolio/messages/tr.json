@@ -33,5 +33,19 @@
     },
     "ProjectDetailPage": {
         "footer": "Diğer Projelerime Göz Atın"
+    },
+    "ContactPage": {
+        "title": "Bana Ulaşın",
+        "description": "Projeler, iş teklifleri veya sadece merhaba demek için buradan veya {email} adresinden yazabilirsiniz. Mesajınızı en kısa sürede okuyup size dönüş yapacağım. Ayrıca LinkedIn ve GitHub profillerimden de bana ulaşabilirsiniz.",
+        "namelabel": "Ad",
+        "nameplaceholder": "Adınız",
+        "emaillabel": "Email",
+        "emailplaceholder": "ornek@mail.com",
+        "subjectlabel": "Konu",
+        "subjectplaceholder": "Konu",
+        "messagelabel": "Mesaj",
+        "messageplaceholder": "Mesajınızı yazın...",
+        "submitbutton": "Gönder",
+        "submitmessage": "Mesajınız başarıyla gönderildi. Tesekkürler."
     }
 }
