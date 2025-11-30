@@ -26,6 +26,7 @@ export interface project {
         en: chapter[];
         tr: chapter[];
     };
+    liveUrl?: {en:{ text:string, url:string }[], tr:{ text:string, url:string }[]};
 }
 
 export const projects: Record<string, project> = {
@@ -45,6 +46,20 @@ export const projects: Record<string, project> = {
                 {
                     contentType: "text",
                     description: "Açıklama bulunamadı. Diğer projeleri inceleyin."
+                }
+            ]
+        },
+        liveUrl: {
+            en: [
+                {
+                    text: "View Live (You are currently viewing)",
+                    url: "/en"
+                }
+            ],
+            tr: [
+                {
+                    text: "Canlı Aç (Şu anda görüntülüyorsunuz)",
+                    url: "/tr"
                 }
             ]
         }
@@ -653,7 +668,29 @@ export const projects: Record<string, project> = {
                     ]
                 }
                 ]
-            }
+        },
+        liveUrl: {
+            en: [
+                {
+                    text: "AWS Live Demo (HTTP Only)",
+                    url: "http://13.48.125.240/"
+                },
+                {
+                    text: "Vercel + Render Live Demo (Takes longer to load)",
+                    url: "https://flowerforall.vercel.app/"
+                }
+            ],
+            tr: [
+                {
+                    text: "AWS Canlı Aç (Sadece HTTP)",
+                    url: "http://13.48.125.240/"
+                },
+                {
+                    text: "Vercel + Render Canlı Aç (Yüklenmesi uzun sürebilir)",
+                    url: "https://flowerforall.vercel.app/"
+                }
+            ]
+        }
     },
   
     announcementapi: {
